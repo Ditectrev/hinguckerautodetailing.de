@@ -81,6 +81,106 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: outside none none;
+  padding: 0;
+  margin: 0;
+}
+
+button, input, select, textarea {
+  box-shadow: none !important;
+}
+
+.area-padding {
+  padding: 70px 0 80px;
+}
+
+.area-padding-2 {
+  padding: 70px 0 50px;
+}
+
 .fix {
   overflow: hidden;
+}
+
+// TODO: Add to HTML.
+.back-to-top {
+  background: #3ec1d5;
+  border-radius: 2px;
+  bottom: 15px;
+  color: #ffffff;
+  display: none;
+  font-size: 16px;
+  padding: 6px 12px 9px;
+  position: fixed;
+  right: 15px;
+  transition: background .5s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus, &:hover {
+    background: #3ec1d5;
+    color: #ffffff;
+  }
+}
+
+// TODO: Add to website.
+#preloader {
+  background: #ffffff url('assets/images/preloader.gif');
+  height: 100%;
+  left: 0;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+::-moz-selection {
+  background: #3ec1d5;
+  text-shadow: none;
+}
+
+::selection {
+  background: #3ec1d5;
+  text-shadow: none;
+}
+
+.section-headline h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
+
+  // TODO: Check  this pseudoelement.
+  &::after {
+    border: 1px solid #333333;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%;
+  }
+}
+
+.sec-head {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+  transition: all .4s ease 0s;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
 }
