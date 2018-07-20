@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~npm-font-open-sans/open-sans.css";
+@import "~raleway-webfont/raleway.css";
+
+body {
+  background: #ffffff none repeat scroll 0 0;
+  color: #444444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s ease 0s;
+
+  &:active {
+    outline: 0 none;
+  }
+
+  &:focus {
+    outline: 0 solid;
+  }
+
+  &:hover {
+    color: #3ec1d5;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+p {
+  color: #444444;
+  margin: 0 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 50;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 40;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 32;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 26;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 22;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.fix {
+  overflow: hidden;
+}
