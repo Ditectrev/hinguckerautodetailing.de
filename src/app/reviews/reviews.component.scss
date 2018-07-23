@@ -1,0 +1,78 @@
+.reviews-area {
+  background: url("assets/images/about3.jpg") no-repeat fixed top center;
+  background-size: cover;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.work-left-text {
+  background: #3ec1d5 none repeat scroll 0 0;
+  width: 50%;
+}
+
+.work-right-text {
+  background: rgba(0,0,0,.8) none repeat scroll 0 0;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  padding: 71px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+
+  h2 {
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1920px) {
+  .work-right-text {
+    padding: 150px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  .work-right-text {
+    padding: 40px 0;
+
+    h2 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .work-right-text {
+    padding: 36px 0;
+
+    h2 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    h5 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .ready-btn {
+      font-size: 13px;
+      margin-top: 5px;
+      padding: 7px 20px;
+    }
+  }
+}

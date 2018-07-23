@@ -10,6 +10,7 @@ import { SliderComponent } from './slider/slider.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TeamComponent } from './team/team.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TeamComponent } from './team/team.component';
     SliderComponent,
     AboutComponent,
     SkillsComponent,
-    TeamComponent
+    TeamComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
