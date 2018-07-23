@@ -9,6 +9,7 @@ import {appRoutes} from './routes';
 import { SliderComponent } from './slider/slider.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
+import { TeamComponent } from './team/team.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SkillsComponent } from './skills/skills.component';
     HeaderComponent,
     SliderComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
