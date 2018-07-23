@@ -1,5 +1,5 @@
 .header-area {
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0,0,0,.4);
   height: auto;
   left: 0;
   position: absolute;
@@ -8,7 +8,7 @@
   z-index: 9;
 
   &.stick {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0,0,0,1);
     height: 70px;
     position: fixed;
     top: 0;
@@ -58,7 +58,7 @@
     .main-menu ul {
       &.navbar-nav li.menu-active {
         a {
-          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+          background: rgba(0,0,0,0) none repeat scroll 0 0;
           color: #ffffff;
           position: relative;
 

@@ -8,6 +8,7 @@ import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
 import { SliderComponent } from './slider/slider.component';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AboutComponent } from './about/about.component';
     AppComponent,
     HeaderComponent,
     SliderComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
