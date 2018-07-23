@@ -156,7 +156,6 @@ button, input, select, textarea {
   position: relative;
   text-transform: capitalize;
 
-  // TODO: Check  this pseudoelement.
   &::after {
     border: 1px solid #333333;
     bottom: -20px;

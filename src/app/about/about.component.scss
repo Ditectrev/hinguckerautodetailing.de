@@ -1,0 +1,25 @@
+.about-area {
+  background-color: #f9f9f9;
+}
+
+.single-well {
+  > a {
+    display: block;
+  }
+
+  p {
+    color: #444444;
+  }
+
+  ul li {
+    color: #444444;
+    display: block;
+    padding: 5px 0;
+
+    i {
+      color: #3ec1d5;
+      font-size: 12px;
+      padding-right: 10px;
+    }
+  }
+}

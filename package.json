@@ -23,6 +23,7 @@
     "@angular/router": "^5.0.0",
     "bootstrap": "^4.1.1",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
     "npm": "^6.2.0",
     "npm-font-open-sans": "^1.1.0",
     "raleway-webfont": "^3.0.1",

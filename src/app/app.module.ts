@@ -7,13 +7,15 @@ import {RouterModule} from '@angular/router';
 
 import {appRoutes} from './routes';
 import { SliderComponent } from './slider/slider.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SliderComponent
+    SliderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
