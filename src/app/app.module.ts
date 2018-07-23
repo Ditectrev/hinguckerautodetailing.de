@@ -6,12 +6,14 @@ import { HeaderComponent } from './header/header.component';
 import {RouterModule} from '@angular/router';
 
 import {appRoutes} from './routes';
+import { SliderComponent } from './slider/slider.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

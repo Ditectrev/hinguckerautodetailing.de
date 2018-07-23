@@ -21,10 +21,13 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "bootstrap": "^4.1.1",
     "core-js": "^2.4.1",
+    "npm": "^6.2.0",
     "npm-font-open-sans": "^1.1.0",
     "raleway-webfont": "^3.0.1",
     "rxjs": "^5.5.2",
+    "wowjs": "^1.1.3",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
