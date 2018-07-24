@@ -1,0 +1,33 @@
+.services-icon {
+  color: #444444;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.section-headline.services-head>h2 {
+  margin-bottom: 25px;
+}
+
+.services-details {
+  padding-top: 40px;
+  transition: all .5s ease 0s;
+
+  &:hover h4, &:hover .services-icon {
+    color: #3ec1d5;
+  }
+}
+
+.single-services {
+  h4 {
+    color: #444444;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  p {
+    color: #333333;
+    font-size: 14px;
+  }
+}
