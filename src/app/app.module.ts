@@ -13,6 +13,7 @@ import { TeamComponent } from './team/team.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { CtaComponent } from './cta/cta.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     TeamComponent,
     ReviewsComponent,
     PortfolioComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    CtaComponent
   ],
   imports: [
     BrowserModule,
