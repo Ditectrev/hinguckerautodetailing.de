@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TeamComponent } from './team/team.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
     AboutComponent,
     SkillsComponent,
     TeamComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
