@@ -17,6 +17,7 @@ import { CtaComponent } from './cta/cta.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     CtaComponent,
     ContactComponent,
     ServicesComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
