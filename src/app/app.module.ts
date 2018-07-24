@@ -14,6 +14,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CtaComponent } from './cta/cta.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { CtaComponent } from './cta/cta.component';
     ReviewsComponent,
     PortfolioComponent,
     TestimonialsComponent,
-    CtaComponent
+    CtaComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

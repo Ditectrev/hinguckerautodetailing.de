@@ -1,0 +1,88 @@
+<div id="contact" class="contact-area">
+  <div class="contact-inner area-padding">
+    <div class="contact-overly"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Kontaktiere uns</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <div class="contact-icon text-center">
+            <div class="single-icon">
+              <i class="fa fa-mobile"></i>
+              <p>
+                <span>+49 1520 4271999</span><br>
+                <span>Montag-Freitag (09:00-17:00)</span><br>
+                <span>Samstag (09:00-15:00)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="contact-icon text-center">
+            <div class="single-icon">
+              <i class="fa fa-envelope-o"></i>
+              <p>
+                <span>kontakt@hingucker.de</span><br>
+                <span>www.hingucker.de</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="contact-icon text-center">
+            <div class="single-icon">
+              <i class="fa fa-map-marker"></i>
+              <p>
+                <span>Krackser Str. 200 (Sennestadt)</span><br>
+                <span>33689 Bielefeld, Deutschland</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <!-- TODO: Add Google Maps. -->
+          <div id="google-maps" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class="form contact-form">
+            <div id="sendmessage">Ihre Nachricht wurde gesendet. Vielen Dank!</div>
+            <div id="errormessage"></div>
+            <!-- TODO: Create Angular contact form. -->
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Dein Name"
+                       data-rule="minlen:4" data-msg="Bitte geben Sie mindestens 4 Zeichen ein">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Deine E-Mail"
+                       data-rule="email" data-msg="Bitte geben Sie eine gültige Email-Adresse ein">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Thema"
+                       data-rule="minlen:4" data-msg="Bitte geben Sie mindestens 4 Zeichen des Themas ein">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea name="message" rows="5" class="form-control" data-rule="required"
+                          data-msg="Bitte schreib etwas für uns" placeholder="Nachricht"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Nachricht senden</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
