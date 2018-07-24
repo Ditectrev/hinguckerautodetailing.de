@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { TeamComponent } from './team/team.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SkillsComponent,
     TeamComponent,
     ReviewsComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,76 @@
+.testimonials-area {
+  background: rgba(0,0,0,0) url("assets/images/testimonials.jpg") no-repeat fixed center top / cover;
+  height: auto;
+  width: 100%;
+}
+
+.testi-inner {
+  height: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.testi-overly {
+  background: rgba(0,0,0,.7) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.quote {
+  border: 1px dotted #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.testi-text {
+  h6 {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+
+  &.text-center>h6 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+// TODO: Fix OWL Carousel.
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+  .owl-dot {
+    display: inline-block;
+    margin: 0 3px;
+
+    // TODO: Check it.
+    &>span {
+      background: #ffffff none repeat scroll 0 0;
+    }
+
+    &.active span {
+      background: #3ec1d5;
+    }
+  }
+}

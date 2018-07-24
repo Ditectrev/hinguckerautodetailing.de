@@ -111,3 +111,19 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .portfolio-area {
+    padding-top: 0;
+  }
+
+  .project-menu li a {
+    margin: 10px 4px;
+    padding: 8px 12px;
+  }
+
+  .single-project {
+    float: none;
+    width: 100%;
+  }
+}
