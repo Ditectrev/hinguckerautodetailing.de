@@ -16,6 +16,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CtaComponent } from './cta/cta.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ServicesComponent } from './services/services.component';
     TestimonialsComponent,
     CtaComponent,
     ContactComponent,
-    ServicesComponent
+    ServicesComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,

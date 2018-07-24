@@ -178,6 +178,13 @@ button, input, select, textarea {
   transition: all .4s ease 0s;
 }
 
+.text-overly {
+  background: rgba(0,0,0,.6);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
 @media (max-width: 767px) {
   .back-to-top {
     bottom: 15px;
