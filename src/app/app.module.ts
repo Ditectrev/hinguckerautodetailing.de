@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    NgxGalleryModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
