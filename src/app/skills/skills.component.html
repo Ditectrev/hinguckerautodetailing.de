@@ -1,45 +1,79 @@
-<div class="our-skill-area fix-hidden-sm">
+<div class="our-skill-area fix hidden-sm">
   <div class="text-overly"></div>
-  <div class="skill-bg area-padding-2">
+  <div class="area-padding-2">
     <div class="container">
       <div class="row">
-        <div class="skill-text">
-          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-            <div class="single-skill">
-              <div class="progress-circular">
-                <!-- TODO: Fix knob for Angular. -->
-                <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3ec1d5" data-thickness=".2" data-readonly="true" disabled>
-                <h4 class="progress-h4">Fertigkeit 1</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-            <div class="single-skill">
-              <div class="progress-circular">
-                <!-- TODO: Fix knob for Angular. -->
-                <input type="text" class="knob" value="0" data-rel="85" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3ec1d5" data-thickness=".2" data-readonly="true" disabled>
-                <h4 class="progress-h4">Fertigkeit 2</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-            <div class="single-skill">
-              <div class="progress-circular">
-                <!-- TODO: Fix knob for Angular. -->
-                <input type="text" class="knob" value="0" data-rel="75" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3ec1d5" data-thickness=".2" data-readonly="true" disabled>
-                <h4 class="progress-h4">Fertigkeit 3</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-            <div class="single-skill">
-              <div class="progress-circular">
-                <!-- TODO: Fix knob for Angular. -->
-                <input type="text" class="knob" value="0" data-rel="65" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3ec1d5" data-thickness=".2" data-readonly="true" disabled>
-                <h4 class="progress-h4">Fertigkeit 4</h4>
-              </div>
-            </div>
-          </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <circle-progress
+            [percent]="85"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="1500"
+            [titleColor]="'#fafafa'"
+            [titleFontSize]="'20'"
+            [unitsColor]="'#fafafa'"
+            [unitsFontSize]="'20'"
+            [subtitle]="'Fertigkeit 1'"
+            [subtitleFontSize]="26"
+          ></circle-progress>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <circle-progress
+            [percent]="65"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="2000"
+            [titleColor]="'#fafafa'"
+            [titleFontSize]="'20'"
+            [unitsColor]="'#fafafa'"
+            [unitsFontSize]="'20'"
+            [subtitle]="'Fertigkeit 1'"
+            [subtitleFontSize]="26"
+          ></circle-progress>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <circle-progress
+            [percent]="55"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="2500"
+            [titleColor]="'#fafafa'"
+            [titleFontSize]="'20'"
+            [unitsColor]="'#fafafa'"
+            [unitsFontSize]="'20'"
+            [subtitle]="'Fertigkeit 1'"
+            [subtitleFontSize]="26"
+          ></circle-progress>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <circle-progress
+            [percent]="100"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="3000"
+            [titleColor]="'#fafafa'"
+            [titleFontSize]="'20'"
+            [unitsColor]="'#fafafa'"
+            [unitsFontSize]="'20'"
+            [subtitle]="'Fertigkeit 1'"
+            [subtitleFontSize]="26"
+          ></circle-progress>
         </div>
       </div>
     </div>

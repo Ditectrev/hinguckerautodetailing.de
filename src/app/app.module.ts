@@ -19,6 +19,7 @@ import { ServicesComponent } from './services/services.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
@@ -41,6 +42,16 @@ import { NgxGalleryModule } from 'ngx-gallery';
   imports: [
     BrowserModule,
     NgxGalleryModule,
+    // Specify ng-circle-progress as an import
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+    }),
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
