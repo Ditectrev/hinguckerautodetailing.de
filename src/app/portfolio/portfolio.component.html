@@ -16,118 +16,33 @@
               <!-- TODO: Fix filters. -->
               <!-- TODO: Add active class in routing. -->
               <li>
-                <a href="#" class="active" data-filter="*">All</a>
+                <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'">All</a>
               </li>
               <li>
-                <a href="#" data-filter=".kat1">Kat. 1</a>
+                <a [class.active]="filterBy === 'kat1'" (click)="filterBy = 'kat1'">Kat. 1</a>
               </li>
               <li>
-                <a href="#" data-filter=".kat2">Kat. 2</a>
+                <a [class.active]="filterBy === 'kat2'" (click)="filterBy = 'kat2'">Kat. 2</a>
               </li>
               <li>
-                <a href="#" data-filter=".kat3">Kat. 3</a>
+                <a [class.active]="filterBy === 'kat3'" (click)="filterBy = 'kat3'">Kat. 3</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="project-content">
-        <div class="col-sm-4 col-xs-12 kat1">
+        <div class="col-sm-4 col-xs-12 kat1" *ngFor="let image of (visibleImages | imageFilter:filterBy)">
           <div class="single-project">
             <div class="project-img">
               <!-- TODO: Justify href to Facebook album. -->
-              <a href="https://facebook.com" target="_blank"><img src="assets/images/portfolio01.jpg" alt="portfolio"></a>
+              <a href="{{image.url}}" title="{{image.title}}" target="_blank"><img src="{{image.url}}" alt="{{image.title}}"></a>
               <div class="add-actions text-center">
                 <div class="project-dec">
                   <!-- TODO: Fix href. -->
                   <a href="#" class="venobox" data-gall="myGallery">
-                    <h4>Projekt 1</h4>
-                    <span>Klicken Sie hier, um die Facebook-Galerie zu sehen</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 kat2">
-          <div class="single-project">
-            <div class="project-img">
-              <!-- TODO: Justify href to Facebook album. -->
-              <a href="https://facebook.com" target="_blank"><img src="assets/images/portfolio02.jpg" alt="portfolio"></a>
-              <div class="add-actions text-center">
-                <div class="project-dec">
-                  <!-- TODO: Fix href. -->
-                  <a href="#" class="venobox" data-gall="myGallery">
-                    <h4>Projekt 2</h4>
-                    <span>Klicken Sie hier, um die Facebook-Galerie zu sehen</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 kat3">
-          <div class="single-project">
-            <div class="project-img">
-              <!-- TODO: Justify href to Facebook album. -->
-              <a href="https://facebook.com" target="_blank"><img src="assets/images/portfolio03.jpg" alt="portfolio"></a>
-              <div class="add-actions text-center">
-                <div class="project-dec">
-                  <!-- TODO: Fix href. -->
-                  <a href="#" class="venobox" data-gall="myGallery">
-                    <h4>Projekt 3</h4>
-                    <span>Klicken Sie hier, um die Facebook-Galerie zu sehen</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 kat1">
-          <div class="single-project">
-            <div class="project-img">
-              <!-- TODO: Justify href to Facebook album. -->
-              <a href="https://facebook.com" target="_blank"><img src="assets/images/portfolio04.jpg" alt="portfolio"></a>
-              <div class="add-actions text-center">
-                <div class="project-dec">
-                  <!-- TODO: Fix href. -->
-                  <a href="#" class="venobox" data-gall="myGallery">
-                    <h4>Projekt 4</h4>
-                    <span>Klicken Sie hier, um die Facebook-Galerie zu sehen</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 kat2">
-          <div class="single-project">
-            <div class="project-img">
-              <!-- TODO: Justify href to Facebook album. -->
-              <a href="https://facebook.com" target="_blank"><img src="assets/images/portfolio05.jpg" alt="portfolio"></a>
-              <div class="add-actions text-center">
-                <div class="project-dec">
-                  <!-- TODO: Fix href. -->
-                  <a href="#" class="venobox" data-gall="myGallery">
-                    <h4>Projekt 5</h4>
-                    <span>Klicken Sie hier, um die Facebook-Galerie zu sehen</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 kat3">
-          <div class="single-project">
-            <div class="project-img">
-              <!-- TODO: Justify href to Facebook album. -->
-              <a href="https://facebook.com" target="_blank"><img src="assets/images/portfolio06.jpg" alt="portfolio"></a>
-              <div class="add-actions text-center">
-                <div class="project-dec">
-                  <!-- TODO: Fix href. -->
-                  <a href="#" class="venobox" data-gall="myGallery">
-                    <h4>Projekt 6</h4>
-                    <span>Klicken Sie hier, um die Facebook-Galerie zu sehen</span>
+                    <h4>{{image.title}}</h4>
+                    <span>{{image.description}}</span>
                   </a>
                 </div>
               </div>

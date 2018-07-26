@@ -20,6 +20,8 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import {ImageFilterPipe} from './shared/filter.pipe';
+import {ImageService} from './shared/image.service';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ContactComponent,
     ServicesComponent,
     NewsletterComponent,
-    FooterComponent
+    FooterComponent,
+    ImageFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     }),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
