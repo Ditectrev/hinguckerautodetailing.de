@@ -12,7 +12,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { TeamComponent } from './team/team.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CtaComponent } from './cta/cta.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
@@ -34,7 +33,6 @@ import {ImageService} from './shared/image.service';
     TeamComponent,
     ReviewsComponent,
     PortfolioComponent,
-    TestimonialsComponent,
     CtaComponent,
     ContactComponent,
     ServicesComponent,
