@@ -6,10 +6,9 @@ import {ContactComponent} from './contact/contact.component';
 import {HomeComponent} from './home/home.component';
 
 export const appRoutes: Routes = [
-  // TODO: Add animations.
-  { path: '', component: HomeComponent },
-  { path: 'uber-uns', component: AboutComponent },
-  { path: 'dienstleistungen', component: ServicesComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'kontakt', component: ContactComponent }
+  { path: '', component: HomeComponent, data: { animation: 'page1' } },
+  { path: 'uber-uns', component: AboutComponent, data: { animation: 'page2' } },
+  { path: 'dienstleistungen', component: ServicesComponent, data: { animation: 'page3' } },
+  { path: 'portfolio', component: PortfolioComponent, data: { animation: 'page4' } },
+  { path: 'kontakt', component: ContactComponent, data: { animation: 'page5' } }
 ];

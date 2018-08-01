@@ -1,27 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './header/header.component';
 import {RouterModule} from '@angular/router';
 
 import {appRoutes} from './routes';
-import { SliderComponent } from './slider/slider.component';
-import { AboutComponent } from './about/about.component';
-import { SkillsComponent } from './skills/skills.component';
-import { TeamComponent } from './team/team.component';
-import { ReviewsComponent } from './reviews/reviews.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { CtaComponent } from './cta/cta.component';
-import { ContactComponent } from './contact/contact.component';
-import { ServicesComponent } from './services/services.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
-import { FooterComponent } from './footer/footer.component';
-import { NgxGalleryModule } from 'ngx-gallery';
-import { NgCircleProgressModule } from 'ng-circle-progress';
+import {SliderComponent} from './slider/slider.component';
+import {AboutComponent} from './about/about.component';
+import {SkillsComponent} from './skills/skills.component';
+import {TeamComponent} from './team/team.component';
+import {ReviewsComponent} from './reviews/reviews.component';
+import {PortfolioComponent} from './portfolio/portfolio.component';
+import {CtaComponent} from './cta/cta.component';
+import {ContactComponent} from './contact/contact.component';
+import {ServicesComponent} from './services/services.component';
+import {NewsletterComponent} from './newsletter/newsletter.component';
+import {FooterComponent} from './footer/footer.component';
+import {NgxGalleryModule} from 'ngx-gallery';
+import {NgCircleProgressModule} from 'ng-circle-progress';
 import {ImageFilterPipe} from './shared/filter.pipe';
 import {ImageService} from './shared/image.service';
-import { HomeComponent } from './home/home.component';
+import {HomeComponent} from './home/home.component';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -44,6 +46,7 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgxGalleryModule,
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot({
@@ -60,4 +63,5 @@ import { HomeComponent } from './home/home.component';
   providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
