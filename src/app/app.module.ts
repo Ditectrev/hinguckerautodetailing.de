@@ -21,6 +21,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import {ImageFilterPipe} from './shared/filter.pipe';
 import {ImageService} from './shared/image.service';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import {ImageService} from './shared/image.service';
     ServicesComponent,
     NewsletterComponent,
     FooterComponent,
-    ImageFilterPipe
+    ImageFilterPipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
