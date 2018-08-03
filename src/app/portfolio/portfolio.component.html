@@ -13,20 +13,17 @@
         <div class="col-xs-12">
           <div class="project-menu-container">
             <ul class="project-menu">
-              <!-- TODO: Fix hrefs. -->
-              <!-- TODO: Fix filters. -->
-              <!-- TODO: Add active class in routing. -->
               <li>
-                <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'">All</a>
+                <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'" role="link">All</a>
               </li>
               <li>
-                <a [class.active]="filterBy === 'kat1'" (click)="filterBy = 'kat1'">Kat. 1</a>
+                <a [class.active]="filterBy === 'kat1'" (click)="filterBy = 'kat1'" role="link">Kat. 1</a>
               </li>
               <li>
-                <a [class.active]="filterBy === 'kat2'" (click)="filterBy = 'kat2'">Kat. 2</a>
+                <a [class.active]="filterBy === 'kat2'" (click)="filterBy = 'kat2'" role="link">Kat. 2</a>
               </li>
               <li>
-                <a [class.active]="filterBy === 'kat3'" (click)="filterBy = 'kat3'">Kat. 3</a>
+                <a [class.active]="filterBy === 'kat3'" (click)="filterBy = 'kat3'" role="link">Kat. 3</a>
               </li>
             </ul>
           </div>
@@ -37,11 +34,11 @@
           <div class="single-project">
             <div class="project-img">
               <!-- TODO: Justify href to Facebook album. -->
-              <a href="{{image.url}}" title="{{image.title}}" target="_blank"><img src="{{image.url}}" alt="{{image.title}}"></a>
+              <a href="{{image.url}}" title="{{image.title}}" target="_blank" role="link"><img src="{{image.url}}" alt="{{image.title}}"></a>
               <div class="add-actions text-center">
                 <div class="project-dec">
                   <!-- TODO: Fix href. -->
-                  <a href="#" class="venobox" data-gall="myGallery">
+                  <a href="#" class="venobox" data-gall="myGallery" role="link">
                     <h4>{{image.title}}</h4>
                     <span>{{image.description}}</span>
                   </a>
