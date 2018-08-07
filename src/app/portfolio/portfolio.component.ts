@@ -10,7 +10,7 @@ export class PortfolioComponent implements OnChanges {
   visibleImages: any[] = [];
 
   // Create an input.
-  @Input() filterBy?: string = 'all';
+  @Input() filterBy = 'all';
 
   constructor(private imageService: ImageService) {
     this.visibleImages = this.imageService.getImages();
