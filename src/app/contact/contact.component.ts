@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent  {
+  lat = 51.93965;
+  lng = 8.5659913;
 }

@@ -24,6 +24,7 @@ import {ImageService} from './shared/image.service';
 import {HomeComponent} from './home/home.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -58,7 +59,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
     }),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    // TODO: Test it.
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB1gJCgbtpBYbzD6IdFcUOpw7Iwg88RUzs'
+    })
+
   ],
   providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
