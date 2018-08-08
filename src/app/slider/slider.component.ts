@@ -26,12 +26,6 @@ export class SliderComponent implements AfterViewInit, OnInit {
         lazyLoading: true,
         preview: false,
         thumbnails: false
-      },
-      // max-width 575, hide on mobile phones.
-      {
-        breakpoint: 575,
-        height: '0px',
-        image: false
       }
     ];
 

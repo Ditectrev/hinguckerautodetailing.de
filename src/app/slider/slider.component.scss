@@ -37,9 +37,28 @@ a {
 }
 
 // TODO: Fix mobile version for buttons.
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 768px) {
   a {
-    display: block;
+    &.left-btn {
+      left: 20%;
+    }
+    &.right-btn {
+      right: 20%;
+    }
   }
 }
 
+@media (max-width: 767px) {
+  a {
+    &.left-btn {
+      left: 20%;
+      right: 20%;
+      top: 30%;
+    }
+    &.right-btn {
+      left: 20%;
+      right: 20%;
+      top: 70%;
+    }
+  }
+}
