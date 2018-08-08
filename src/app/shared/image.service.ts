@@ -40,7 +40,7 @@ const IMAGES = [
     'category': 'luxury',
     'title': 'AUDI S8 V8 T',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
-    'photo_url': 'assets/images/gallery/luxury3.jpg',
+    'photo_url': 'assets/images/gallery/luxury4.jpg',
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1673281262726306'
   },
   {
