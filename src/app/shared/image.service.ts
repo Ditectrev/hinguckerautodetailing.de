@@ -118,10 +118,10 @@ const IMAGES = [
   {
     'id': 14,
     'category': 'other',
-    'title': 'FORD MONDEO MK4',
+    'title': 'FLUGZEUG',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
     'photo_url': 'assets/images/gallery/other3.jpg',
-    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1046187588769013'
+    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1820993177955113'
   },
   {
     'id': 15,
