@@ -1,7 +1,7 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 col-sm-12">
+      <div class="col-sm-12">
         <nav class="navbar navbar-default">
           <div class="navbar-header">
             <button
@@ -9,7 +9,10 @@
               class="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#nav-menu-collapse"
-              aria-expanded="false">
+              aria-expanded="false"
+              (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="nav-menu-collapse">
               <span class="sr-only">Navigation umschalten</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -20,7 +23,7 @@
             </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling. -->
-          <div class="collapse navbar-collapse main-menu" id="nav-menu-collapse">
+          <div class="collapse navbar-collapse main-menu" id="nav-menu-collapse" [ngbCollapse]="isCollapsed">
             <ul class="nav navbar-nav navbar-right">
               <!-- Set routerLinkActiveOptions to avoid duplication menu-active class. -->
               <li

@@ -12,4 +12,6 @@ export class HeaderComponent {
     { 'url': '/portfolio', 'name': 'Portfolio' },
     { 'url': '/kontakt', 'name': 'Kontakt' }
   ];
+
+  public isCollapsed = true;
 }

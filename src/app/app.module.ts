@@ -26,6 +26,7 @@ import {HomeComponent} from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 import {MomentModule} from 'angular2-moment';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import {MomentModule} from 'angular2-moment';
     BrowserAnimationsModule,
     NgxGalleryModule,
     MomentModule,
+    NgbModule.forRoot(),
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot({
       // set defaults here

@@ -136,25 +136,14 @@ header {
       background: none;
     }
   }
-
-  // TODO: Test.
-  .navbar-nav {
-    > li > a:focus, > li > a:hover {
-      background-color: transparent;
-      color: #ffffff;
-    }
-
-    .menu-active {
-      > a, > a:focus, > a:hover {
-        background: none;
-        color: #333333;
-      }
-    }
-  }
 }
 
 /* Mobile styling. */
 @media (min-width: 768px) and (max-width: 991px) {
+  .sticky-logo h1 {
+    font-size: 24px;
+  }
+
   .main-menu ul.navbar-nav li {
     display: inline-block;
     padding: 0 8px;
@@ -171,31 +160,37 @@ header {
     height: 60px !important;
   }
 
-  .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
-    display: inline-block;
-    height: 60px !important;
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .sticky-logo h1 {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .navbar-header a.navbar-brand {
+    height: 60px;
     padding: 9px 0;
   }
 
-  .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
+  .navbar-default .navbar-toggle {
     padding: 15px 0;
   }
 
-  .nav.navbar-nav.navbar-right, .stick .nav.navbar-nav.navbar-right {
+  .nav.navbar-nav.navbar-right {
     background-color: #252525;
     margin-top: 0;
     padding: 0;
   }
 
-  .main-menu ul.navbar-nav li, .stick .main-menu ul.navbar-nav li {
+  .main-menu ul.navbar-nav li {
     display: block;
 
-    // TODO: Check if works for both classes.
     a {
       padding: 10px 2px;
     }
 
-    // TODO: Check if works for both classes.
     &.menu-active a::after {
       border: 0 solid #ffffff;
     }
