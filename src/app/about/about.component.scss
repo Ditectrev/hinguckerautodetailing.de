@@ -3,12 +3,9 @@
 }
 
 .single-well {
-  > a {
-    display: block;
-  }
-
   p {
     color: #444444;
+    text-align: justify;
   }
 
   ul li {
@@ -21,5 +18,9 @@
       font-size: 12px;
       padding-right: 10px;
     }
+  }
+
+  img {
+    margin-top: 40px;
   }
 }
