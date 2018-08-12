@@ -25,6 +25,7 @@ import {HomeComponent} from './home/home.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
+import {MomentModule} from 'angular2-moment';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     BrowserAnimationsModule,
     NgxGalleryModule,
+    MomentModule,
     // Specify ng-circle-progress as an import
     NgCircleProgressModule.forRoot({
       // set defaults here
@@ -64,7 +66,6 @@ import { AgmCoreModule } from '@agm/core';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB1gJCgbtpBYbzD6IdFcUOpw7Iwg88RUzs'
     })
-
   ],
   providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]

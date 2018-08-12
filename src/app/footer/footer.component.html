@@ -47,8 +47,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 copyright text-center">
-          <!-- TODO: Add year using Angular. -->
-          <p>&copy; 2018 <strong>Hingucker Auto Detailing</strong>. Erstellt von <a href="http://ditectrev.com" target="_blank" title="Webentwicklung" role="link">Ditectrev</a></p>
+          <p>&copy; {{ myDate | amDateFormat: 'YYYY' }} <strong>Hingucker Auto Detailing</strong>. Erstellt von <a href="http://ditectrev.com" target="_blank" title="Webentwicklung" role="link">Ditectrev</a></p>
         </div>
       </div>
     </div>
