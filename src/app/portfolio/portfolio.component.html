@@ -14,6 +14,7 @@
         <div class="col-xs-12">
           <div class="project-menu-container">
             <ul class="project-menu">
+              <!-- TODO: Add list and ngFor. -->
               <li>
                 <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'" role="link">Alle</a>
               </li>
@@ -43,11 +44,9 @@
         <div class="col-sm-4 col-xs-12 kat1" *ngFor="let image of (visibleImages | imageFilter:filterBy)">
           <div class="single-project">
             <div class="project-img">
-              <!-- TODO: Justify href to Facebook album. -->
               <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
               <div class="add-actions text-center">
                 <div class="project-dec">
-                  <!-- TODO: Fix href. -->
                   <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" class="venobox" data-gall="myGallery" role="link">
                     <h4>{{image.title}}</h4>
                     <span>{{image.description}}</span>

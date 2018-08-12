@@ -123,9 +123,15 @@
     padding-top: 0;
   }
 
-  .project-menu li a {
-    margin: 10px 4px;
-    padding: 8px 12px;
+  .project-menu li {
+    display: block;
+
+    a {
+      font-size: 20px;
+      margin: 10px 4px;
+      padding: 8px 12px;
+      width: 80%;
+    }
   }
 
   .single-project {
