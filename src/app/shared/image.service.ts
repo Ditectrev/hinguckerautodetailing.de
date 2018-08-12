@@ -110,10 +110,10 @@ const IMAGES = [
   {
     'id': 13,
     'category': 'other',
-    'title': 'BMW E39 520I',
+    'title': 'LKW - Gründliche Reinigung des Innenraums',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
     'photo_url': 'assets/images/gallery/other2.jpg',
-    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1055453714509067'
+    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1689930174394748'
   },
   {
     'id': 14,
