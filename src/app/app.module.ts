@@ -27,6 +27,23 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 import {MomentModule} from 'angular2-moment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SpecialOfferComponent } from './services/special-offer/special-offer.component';
+import { DoorToDoorComponent } from './services/door-to-door/door-to-door.component';
+import { DetaillingInteriorStandardComponent } from './services/detailling-interior-standard/detailling-interior-standard.component';
+import { DetaillingInteriorLuxComponent } from './services/detailling-interior-lux/detailling-interior-lux.component';
+import { OzonationComponent } from './services/ozonation/ozonation.component';
+import { HerbstWinterStandardComponent } from './services/herbst-winter-standard/herbst-winter-standard.component';
+import { HerbstWinterExclusiveComponent } from './services/herbst-winter-exclusive/herbst-winter-exclusive.component';
+import { LeatherCleaningComponent } from './services/leather-cleaning/leather-cleaning.component';
+import { ConvertibleRoofsProtectionComponent } from './services/convertible-roofs-protection/convertible-roofs-protection.component';
+import { ConvertibleRoofsCleaningComponent } from './services/convertible-roofs-cleaning/convertible-roofs-cleaning.component';
+import { LeatherPaintingComponent } from './services/leather-painting/leather-painting.component';
+import { LeatherProtectionComponent } from './services/leather-protection/leather-protection.component';
+import { LampsRepairComponent } from './services/lamps-repair/lamps-repair.component';
+import { PaintProtectionWaxComponent } from './services/paint-protection-wax/paint-protection-wax.component';
+import { PaintRepairComponent } from './services/paint-repair/paint-repair.component';
+import { PaintProtectionQuartzComponent } from './services/paint-protection-quartz/paint-protection-quartz.component';
+import { PaintProtectionCeramicsComponent } from './services/paint-protection-ceramics/paint-protection-ceramics.component';
 
 
 @NgModule({
@@ -45,7 +62,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NewsletterComponent,
     FooterComponent,
     ImageFilterPipe,
-    HomeComponent
+    HomeComponent,
+    SpecialOfferComponent,
+    DoorToDoorComponent,
+    DetaillingInteriorStandardComponent,
+    DetaillingInteriorLuxComponent,
+    OzonationComponent,
+    HerbstWinterStandardComponent,
+    HerbstWinterExclusiveComponent,
+    LeatherCleaningComponent,
+    ConvertibleRoofsProtectionComponent,
+    ConvertibleRoofsCleaningComponent,
+    LeatherPaintingComponent,
+    LeatherProtectionComponent,
+    LampsRepairComponent,
+    PaintProtectionWaxComponent,
+    PaintRepairComponent,
+    PaintProtectionQuartzComponent,
+    PaintProtectionCeramicsComponent
   ],
   imports: [
     BrowserModule,
@@ -59,8 +93,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
       radius: 100,
       outerStrokeWidth: 16,
       innerStrokeWidth: 8,
-      outerStrokeColor: "#78C000",
-      innerStrokeColor: "#C7E596",
+      outerStrokeColor: '#78C000',
+      innerStrokeColor: '#C7E596',
       animationDuration: 300,
     }),
     RouterModule.forRoot(appRoutes),
