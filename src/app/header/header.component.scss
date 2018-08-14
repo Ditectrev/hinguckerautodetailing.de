@@ -66,6 +66,64 @@ header {
   }
 }
 
+.nav ul {
+  background: #000000;
+  border: 1px solid #e7e7e7;
+  display: none;
+  left: 0;
+  margin: 4px 0 0 0;
+  position: absolute;
+  top: 80%;
+  z-index: 99;
+}
+
+.nav ul li:first-child {
+  border-top: 0;
+}
+
+.nav ul li a {
+  color: #333333;
+  display: block;
+  font-size: 13px;
+  padding: 10px;
+  text-transform: none;
+  transition: .3s;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0 8px 10px 8px;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav > li > a:before {
+  background-color: #ee9400;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all .3s ease-in-out 0s;
+  width: 100%;
+}
+
+.nav a:hover:before, .nav li:hover > a:before, .nav .menu-active > a:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .navbar-header a.navbar-brand {
   display: inline-block;
   height: 70px;

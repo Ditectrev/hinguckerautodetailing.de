@@ -9,21 +9,14 @@ export class HeaderComponent {
   mainRoutes = [
     { 'url': '/uber-uns', 'name': 'Über Uns' },
     { 'url': '/dienstleistungen', 'name': 'Dienstleistungen' },
-
-    { 'url': '/lackschutz-keramik', 'name': 'Lackschutz Keramik' },
-
     { 'url': '/portfolio', 'name': 'Portfolio' },
     { 'url': '/kontakt', 'name': 'Kontakt' }
   ];
-  // TODO: Add subroutes to services.
   servicesRoutes = [
-    { 'url': '/sonderangebot', 'name': 'Sonderangebot' },
     { 'url': '/door-to-door', 'name': 'Door to door' },
     { 'url': '/detailling-des-innenraumes-standard', 'name': 'Detailling des Innenraumes Standard' },
     { 'url': '/detailling-des-innenraumes-lux', 'name': 'Detailling des Innenraumes Lux' },
     { 'url': '/ozonierung', 'name': 'Ozonierung' },
-    { 'url': '/herbst-winter-standardpaket', 'name': 'Herbst/Winter Standardpaket' },
-    { 'url': '/herbst-winter-exklusivpaket', 'name': 'Herbst/Winter Exklusivpaket' },
     { 'url': '/leder-reinigung', 'name': 'Leder Reinigung' },
     { 'url': '/cabriodacher-schutz', 'name': 'Cabriodächer Schutz' },
     { 'url': '/cabriodacher-reinigung', 'name': 'Cabriodächer Reinigung' },

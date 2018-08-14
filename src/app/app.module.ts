@@ -27,13 +27,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 import {MomentModule} from 'angular2-moment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SpecialOfferComponent } from './services/special-offer/special-offer.component';
 import { DoorToDoorComponent } from './services/door-to-door/door-to-door.component';
 import { DetaillingInteriorStandardComponent } from './services/detailling-interior-standard/detailling-interior-standard.component';
 import { DetaillingInteriorLuxComponent } from './services/detailling-interior-lux/detailling-interior-lux.component';
 import { OzonationComponent } from './services/ozonation/ozonation.component';
-import { HerbstWinterStandardComponent } from './services/herbst-winter-standard/herbst-winter-standard.component';
-import { HerbstWinterExclusiveComponent } from './services/herbst-winter-exclusive/herbst-winter-exclusive.component';
 import { LeatherCleaningComponent } from './services/leather-cleaning/leather-cleaning.component';
 import { ConvertibleRoofsProtectionComponent } from './services/convertible-roofs-protection/convertible-roofs-protection.component';
 import { ConvertibleRoofsCleaningComponent } from './services/convertible-roofs-cleaning/convertible-roofs-cleaning.component';
@@ -63,13 +60,10 @@ import { PaintProtectionCeramicsComponent } from './services/paint-protection-ce
     FooterComponent,
     ImageFilterPipe,
     HomeComponent,
-    SpecialOfferComponent,
     DoorToDoorComponent,
     DetaillingInteriorStandardComponent,
     DetaillingInteriorLuxComponent,
     OzonationComponent,
-    HerbstWinterStandardComponent,
-    HerbstWinterExclusiveComponent,
     LeatherCleaningComponent,
     ConvertibleRoofsProtectionComponent,
     ConvertibleRoofsCleaningComponent,
