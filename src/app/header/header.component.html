@@ -34,16 +34,6 @@
                 data-toggle="collapse"
                 data-target=".navbar-collapse.in">
                 <a routerLink="{{ route.url }}" role="link" title="route.name">{{ route.name }}</a>
-                <ul *ngIf="i === 1">
-                  <li
-                    role="presentation"
-                    routerLinkActive="menu-active"
-                    [routerLinkActiveOptions]="{exact: true}"
-                    *ngFor="let subroute of servicesRoutes"
-                  >
-                    <a routerLink="{{ subroute.url }}" role="link" title="subroute.name">{{ subroute.name }}</a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>

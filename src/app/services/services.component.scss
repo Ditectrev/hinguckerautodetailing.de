@@ -2,12 +2,12 @@
   color: #444444;
   display: inline-block;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 46px;
   margin-bottom: 20px;
 }
 
 .section-headline.services-head>h2 {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .services-details {
@@ -20,10 +20,14 @@
 }
 
 .single-services {
+  display: inline-block;
+  max-height: 200px;
+
   h4 {
     color: #444444;
     font-size: 24px;
     font-weight: 500;
+    padding: 0 20px;
   }
 
   p {

@@ -8,7 +8,6 @@ import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
 import {SliderComponent} from './slider/slider.component';
 import {AboutComponent} from './about/about.component';
-import {SkillsComponent} from './skills/skills.component';
 import {TeamComponent} from './team/team.component';
 import {ReviewsComponent} from './reviews/reviews.component';
 import {PortfolioComponent} from './portfolio/portfolio.component';
@@ -18,7 +17,6 @@ import {ServicesComponent} from './services/services.component';
 import {NewsletterComponent} from './newsletter/newsletter.component';
 import {FooterComponent} from './footer/footer.component';
 import {NgxGalleryModule} from 'ngx-gallery';
-import {NgCircleProgressModule} from 'ng-circle-progress';
 import {ImageFilterPipe} from './shared/filter.pipe';
 import {ImageService} from './shared/image.service';
 import {HomeComponent} from './home/home.component';
@@ -49,7 +47,6 @@ import { PaintProtectionCeramicsComponent } from './services/paint-protection-ce
     HeaderComponent,
     SliderComponent,
     AboutComponent,
-    SkillsComponent,
     TeamComponent,
     ReviewsComponent,
     PortfolioComponent,
@@ -81,16 +78,6 @@ import { PaintProtectionCeramicsComponent } from './services/paint-protection-ce
     NgxGalleryModule,
     MomentModule,
     NgbModule.forRoot(),
-    // Specify ng-circle-progress as an import
-    NgCircleProgressModule.forRoot({
-      // set defaults here
-      radius: 100,
-      outerStrokeWidth: 16,
-      innerStrokeWidth: 8,
-      outerStrokeColor: '#78C000',
-      innerStrokeColor: '#C7E596',
-      animationDuration: 300,
-    }),
     RouterModule.forRoot(appRoutes),
     // TODO: Test it.
     AgmCoreModule.forRoot({
