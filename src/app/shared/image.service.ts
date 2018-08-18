@@ -101,30 +101,6 @@ const IMAGES = [
   },
   {
     'id': 12,
-    'category': 'other',
-    'title': 'MERCEDES SPRINTER',
-    'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
-    'photo_url': 'assets/images/gallery/other1.jpg',
-    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1651895291531570'
-  },
-  {
-    'id': 13,
-    'category': 'other',
-    'title': 'LKW - Gründliche Reinigung des Innenraums',
-    'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
-    'photo_url': 'assets/images/gallery/other2.jpg',
-    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1689930174394748'
-  },
-  {
-    'id': 14,
-    'category': 'other',
-    'title': 'FLUGZEUG',
-    'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
-    'photo_url': 'assets/images/gallery/other3.jpg',
-    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1820993177955113'
-  },
-  {
-    'id': 15,
     'category': 'sport',
     'title': 'FORD MUSTANG V COUPE',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -132,7 +108,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1048199068567865'
   },
   {
-    'id': 16,
+    'id': 13,
     'category': 'sport',
     'title': 'MASERATI GRANTURISMO 2007',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -140,7 +116,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1202664013121369'
   },
   {
-    'id': 17,
+    'id': 14,
     'category': 'sport',
     'title': 'LAMBORGHINI GALLARDO LP 570-4 PERFORMANTE',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -148,7 +124,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1390468131007622'
   },
   {
-    'id': 18,
+    'id': 15,
     'category': 'sport',
     'title': 'AUDI TT RS',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -156,7 +132,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1412316138822821'
   },
   {
-    'id': 19,
+    'id': 16,
     'category': 'sport',
     'title': 'FERRARI 612 SCAGLIETTI',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -164,7 +140,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1442756569112111'
   },
   {
-    'id': 20,
+    'id': 17,
     'category': 'sport',
     'title': 'AUDI R8',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -172,7 +148,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1471134382940996'
   },
   {
-    'id': 21,
+    'id': 18,
     'category': 'sport',
     'title': 'CORVETTE Z06',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -180,7 +156,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1761189917268773'
   },
   {
-    'id': 22,
+    'id': 19,
     'category': 'suv',
     'title': 'AUDI SQ5',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -188,7 +164,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1425424997511935'
   },
   {
-    'id': 23,
+    'id': 20,
     'category': 'suv',
     'title': 'TESLA X',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -196,7 +172,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1234364629951307'
   },
   {
-    'id': 24,
+    'id': 21,
     'category': 'suv',
     'title': 'RANGE ROVER',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -204,7 +180,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1367277213326714'
   },
   {
-    'id': 25,
+    'id': 22,
     'category': 'suv',
     'title': 'RANGE ROVER SUPERCHARGED AUTOBIOGRAPHY',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -212,7 +188,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1071476126240159'
   },
   {
-    'id': 26,
+    'id': 23,
     'category': 'suv',
     'title': 'INFINITI QX70S',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -220,7 +196,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1087451324642639'
   },
   {
-    'id': 27,
+    'id': 24,
     'category': 'suv',
     'title': 'VOLVO XC90',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -228,7 +204,15 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1531154766938957'
   },
   {
-    'id': 28,
+    'id': 25,
+    'category': 'suv',
+    'title': 'MERCEDES VITO',
+    'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/suv7.jpg',
+    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1242128302508273'
+  },
+  {
+    'id': 26,
     'category': 'van',
     'title': 'MERCEDES G63 AMG',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -236,7 +220,7 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1626748550712911'
   },
   {
-    'id': 29,
+    'id': 27,
     'category': 'van',
     'title': 'VW MULTIVAN BLACK & WHITE',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
@@ -244,11 +228,27 @@ const IMAGES = [
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1085824391471999'
   },
   {
-    'id': 30,
-    'category': 'van',
-    'title': 'MERCEDES VITO',
+    'id': 28,
+    'category': 'other',
+    'title': 'LKW - Gründliche Reinigung des Innenraums',
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
-    'photo_url': 'assets/images/gallery/van3.jpg',
-    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1242128302508273'
+    'photo_url': 'assets/images/gallery/other1.jpg',
+    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1689930174394748'
+  },
+  {
+    'id': 29,
+    'category': 'other',
+    'title': 'FLUGZEUG',
+    'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/other2.jpg',
+    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1820993177955113'
+  },
+  {
+    'id': 30,
+    'category': 'other',
+    'title': 'MERCEDES SPRINTER',
+    'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/other3.jpg',
+    'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1651895291531570'
   }
 ];
