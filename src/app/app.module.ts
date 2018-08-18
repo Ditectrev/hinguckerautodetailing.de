@@ -14,7 +14,6 @@ import {PortfolioComponent} from './portfolio/portfolio.component';
 import {CtaComponent} from './cta/cta.component';
 import {ContactComponent} from './contact/contact.component';
 import {ServicesComponent} from './services/services.component';
-import {NewsletterComponent} from './newsletter/newsletter.component';
 import {FooterComponent} from './footer/footer.component';
 import {NgxGalleryModule} from 'ngx-gallery';
 import {ImageFilterPipe} from './shared/filter.pipe';
@@ -53,7 +52,6 @@ import { PaintProtectionCeramicsComponent } from './services/paint-protection-ce
     CtaComponent,
     ContactComponent,
     ServicesComponent,
-    NewsletterComponent,
     FooterComponent,
     ImageFilterPipe,
     HomeComponent,
