@@ -29,7 +29,7 @@ export const appRoutes: Routes = [
   { path: 'detailling-des-innenraumes-standard', component: DetaillingInteriorStandardComponent, data: { animation: 'page7' } },
   { path: 'detailling-des-innenraumes-lux', component: DetaillingInteriorLuxComponent, data: { animation: 'page8' } },
   { path: 'ozonierung', component: OzonationComponent, data: { animation: 'page9' } },
-  { path: 'leder-reinigung', component: LeatherCleaningComponent, data: { animation: 'page10' } },
+  { path: 'reinigung-leder', component: LeatherCleaningComponent, data: { animation: 'page10' } },
   { path: 'cabriodacher-schutz', component: ConvertibleRoofsProtectionComponent, data: { animation: 'page11' } },
   { path: 'cabriodacher-reinigung', component: ConvertibleRoofsCleaningComponent, data: { animation: 'page12' } },
   { path: 'malen-von-leder', component: LeatherPaintingComponent, data: { animation: 'page13' } },
