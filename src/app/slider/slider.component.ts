@@ -33,20 +33,17 @@ export class SliderComponent implements AfterViewInit, OnInit {
       {
         small: 'assets/images/slider1.jpg',
         medium: 'assets/images/slider1.jpg',
-        big: 'assets/images/slider1.jpg',
-        description: 'Titel 1'
+        big: 'assets/images/slider1.jpg'
       },
       {
         small: 'assets/images/slider2.jpg',
         medium: 'assets/images/slider2.jpg',
-        big: 'assets/images/slider2.jpg',
-        description: 'Titel 2'
+        big: 'assets/images/slider2.jpg'
       },
       {
         small: 'assets/images/slider3.jpg',
         medium: 'assets/images/slider3.jpg',
-        big: 'assets/images/slider3.jpg',
-        description: 'Titel 3'
+        big: 'assets/images/slider3.jpg'
       }
     ];
   }
