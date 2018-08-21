@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="section-headline text-center">
-            <h2>Kontaktiere uns</h2>
+            <h2>{{ title }}</h2>
           </div>
         </div>
       </div>
@@ -16,9 +16,9 @@
             <div class="single-icon">
               <i class="fa fa-mobile"></i>
               <p>
-                <span>+49 1520 4271999</span><br>
-                <span>Montag-Freitag (09:00-17:00)</span><br>
-                <span>Samstag (09:00-15:00)</span>
+                <span>{{ phone }}</span><br>
+                <span>{{ open_hours1 }}</span><br>
+                <span>{{ open_hours2 }}</span>
               </p>
             </div>
           </div>
@@ -28,8 +28,8 @@
             <div class="single-icon">
               <i class="fa fa-envelope-o"></i>
               <p>
-                <span>kontakt@hinguckerautodetailing.de</span><br>
-                <span>www.hingucker.de</span>
+                <span>{{ mail }}</span><br>
+                <span>{{ website }}</span>
               </p>
             </div>
           </div>
@@ -39,8 +39,8 @@
             <div class="single-icon">
               <i class="fa fa-map-marker"></i>
               <p>
-                <span>Krackser Str. 200 (Sennestadt)</span><br>
-                <span>33689 Bielefeld, Deutschland</span>
+                <span>{{ street }}</span><br>
+                <span>{{ city }}</span>
               </p>
             </div>
           </div>
@@ -48,40 +48,67 @@
       </div>
       <div class="row">
         <div class="col-sm-6 col-xs-12">
-          <!-- TODO: Add Google Maps. -->
-          <!--<div id="google-maps" data-latitude="40.713732" data-longitude="-74.0092704"></div>-->
           <agm-map [latitude]="lat" [longitude]="lng">
             <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
           </agm-map>
         </div>
         <div class="col-sm-6 col-xs-12">
           <div class="form contact-form">
-            <div id="sendmessage">Ihre Nachricht wurde gesendet. Vielen Dank!</div>
-            <div id="errormessage"></div>
-            <!-- TODO: Create Angular contact form. -->
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Dein Name"
-                       data-rule="minlen:4" data-msg="Bitte geben Sie mindestens 4 Zeichen ein">
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Deine E-Mail"
-                       data-rule="email" data-msg="Bitte geben Sie eine gültige Email-Adresse ein">
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Thema"
-                       data-rule="minlen:4" data-msg="Bitte geben Sie mindestens 4 Zeichen des Themas ein">
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea name="message" rows="5" class="form-control" data-rule="required"
-                          data-msg="Bitte schreib etwas für uns" placeholder="Nachricht"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center">
-                <button type="submit">Nachricht senden</button>
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm.value.userData)" role="form" class="contactForm">
+              <div formGroupName="userData">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    formControlName="name"
+                    placeholder="{{ placeholderName }}">
+                  <span
+                  *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched"
+                  class="help-block">{{ wrongName }}</span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    formControlName="email"
+                    placeholder="{{ placeholderEmail }}">
+                  <span
+                    *ngIf="!signupForm.get('userData.email').valid && signupForm.get('userData.email').touched"
+                    class="help-block"
+                  >{{ wrongEmail }}</span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    formControlName="subject"
+                    placeholder="{{ placeholderSubject }}">
+                  <span
+                    *ngIf="!signupForm.get('userData.subject').valid && signupForm.get('userData.subject').touched"
+                    class="help-block">{{ wrongSubject }}</span>
+                </div>
+                <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  formControlName="message"
+                  rows="5"
+                  placeholder="{{ placeholderMessage }}"></textarea>
+                  <span
+                  *ngIf="!signupForm.get('userData.message').valid && signupForm.get('userData.message').touched"
+                  class="help-block">{{ wrongMessage }}</span>
+                </div>
+                <div class="text-center">
+                  <button type="submit" [disabled]="!signupForm.valid">{{ sendMessage }}</button>
+                  <span *ngIf="!signupForm.valid && signupForm.touched" class="help-block">{{ wrongForm }}</span>
+                  <span *ngIf="signupForm.valid && this.submitted" class="help-block success-span">{{ sentMessage }}</span>
+                </div>
               </div>
             </form>
           </div>

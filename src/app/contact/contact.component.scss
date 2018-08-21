@@ -43,49 +43,14 @@
     padding: 20px;
     width: 100%;
   }
-}
 
-/* TODO: Justify for Angular. */
-.contact-form  {
-  #errormessage {
-    border: 1px solid red;
+  span {
     color: red;
-    display: none;
-    font-weight: 600;
-    margin-bottom: 15px;
-    padding: 15px;
-    text-align: center;
 
-    &.show {
-      display: block;
+    &.success-span {
+      color: green;
     }
   }
-
-  #sendmessage {
-    border: 1px solid #3ec1d5;
-    color: #3ec1d5;
-    display: none;
-    font-weight: 600;
-    margin-bottom: 15px;
-    padding: 15px;
-    text-align: center;
-
-    &.show {
-      display: block;
-    }
-  }
-
-  .show {
-    display: block;
-  }
-}
-
-#contact .form .validation {
-  color: red;
-  display: none;
-  font-size: 13px;
-  font-weight: 400;
-  margin: 0 0 20px;
 }
 
 .single-icon {
@@ -97,7 +62,7 @@
     line-height: 46px;
     margin-bottom: 20px;
     width: 50px;
-  }
+  }§
 
   p {
     font-size: 16px;

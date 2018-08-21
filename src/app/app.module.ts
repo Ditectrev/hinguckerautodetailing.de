@@ -38,6 +38,9 @@ import { PaintProtectionWaxComponent } from './services/paint-protection-wax/pai
 import { PaintRepairComponent } from './services/paint-repair/paint-repair.component';
 import { PaintProtectionQuartzComponent } from './services/paint-protection-quartz/paint-protection-quartz.component';
 import { PaintProtectionCeramicsComponent } from './services/paint-protection-ceramics/paint-protection-ceramics.component';
+import {MailService} from './shared/mail.service';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
 
 @NgModule({
@@ -75,14 +78,15 @@ import { PaintProtectionCeramicsComponent } from './services/paint-protection-ce
     BrowserAnimationsModule,
     NgxGalleryModule,
     MomentModule,
+    HttpModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    // TODO: Test it.
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB1gJCgbtpBYbzD6IdFcUOpw7Iwg88RUzs'
     })
   ],
-  providers: [ImageService, ImageFilterPipe],
+  providers: [ImageService, ImageFilterPipe, MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
