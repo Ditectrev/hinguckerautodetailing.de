@@ -34,7 +34,7 @@
                 *ngFor="let route of mainRoutes; let i = index"
                 data-toggle="collapse"
                 data-target=".navbar-collapse.in">
-                <a routerLink="{{ route.url }}" role="link" title="route.name">{{ route.name }}</a>
+                <a routerLink="{{ route.url }}" role="link" title="{{ route.name }}">{{ route.name }}</a>
               </li>
             </ul>
           </div>
