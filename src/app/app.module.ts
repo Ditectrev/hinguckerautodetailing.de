@@ -41,6 +41,7 @@ import { PaintProtectionCeramicsComponent } from './services/paint-protection-ce
 import {MailService} from './shared/mail.service';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import {HttpModule} from '@angular/http';
     PaintProtectionWaxComponent,
     PaintRepairComponent,
     PaintProtectionQuartzComponent,
-    PaintProtectionCeramicsComponent
+    PaintProtectionCeramicsComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,7 @@ import {PaintProtectionWaxComponent} from './services/paint-protection-wax/paint
 import {PaintRepairComponent} from './services/paint-repair/paint-repair.component';
 import {PaintProtectionQuartzComponent} from './services/paint-protection-quartz/paint-protection-quartz.component';
 import {PaintProtectionCeramicsComponent} from './services/paint-protection-ceramics/paint-protection-ceramics.component';
+import {ErrorPageComponent} from './error-page/error-page.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -38,5 +39,11 @@ export const appRoutes: Routes = [
   { path: 'lackschutz-wachs', component: PaintProtectionWaxComponent, data: { animation: 'page16' } },
   { path: 'instandsetzung-des-lackes', component: PaintRepairComponent, data: { animation: 'page17' } },
   { path: 'lackschutz-quarzbeschichtung', component: PaintProtectionQuartzComponent, data: { animation: 'page18' } },
-  { path: 'lackschutz-keramik', component: PaintProtectionCeramicsComponent, data: { animation: 'page19' } }
+  { path: 'lackschutz-keramik', component: PaintProtectionCeramicsComponent, data: { animation: 'page19' } },
+  { path: 'nicht-gefunden', component: ErrorPageComponent, data: { animation: 'page20' } },
+  // It's important that wildcard route has to be the last element in array of routes, because routes parses from top to bottom.
+  { path: '**', // Wildcard path, which means to catch all other routes, not specified above.
+    redirectTo: '/nicht-gefunden' // Alternative to component in routes, which redirects to specific path.
+  }
+
 ];
