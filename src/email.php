@@ -29,7 +29,7 @@ if (empty($errors)) {
   $email_subject = "$website: Neue Nachricht von $from_name";
 
   $email_body = "<html><body>";
-  $email_body .= "$contact $topic $content";
+  $email_body .= "$contact";
   $email_body .= "</body></html>";
 
   // Allow using HTML in sending mail.

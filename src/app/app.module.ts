@@ -78,10 +78,10 @@ import { ErrorPageComponent } from './error-page/error-page.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgxGalleryModule,
-    MomentModule,
-    HttpModule,
     ReactiveFormsModule,
+    HttpModule,
+    MomentModule,
+    NgxGalleryModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({

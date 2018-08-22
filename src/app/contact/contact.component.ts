@@ -58,10 +58,10 @@ export class ContactComponent implements OnInit {
         this.submitted = false;
       }, 5000);
     }, error => {
-      console.log('MailService error', error);
+      // console.log('MailService error', error);
     });
-    console.log('Message name with its content')
-    console.log(this.signupForm.value.userData.name);
-    console.log(message);
+    // console.log('Message name with its content');
+    // console.log(this.signupForm.value.userData.name);
+    // console.log(message);
   }
 }
