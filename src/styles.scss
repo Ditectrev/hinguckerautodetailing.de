@@ -156,7 +156,8 @@ button, input, select, textarea {
   position: relative;
 
   &::after {
-    border: 1px solid #333333;
+    //border: 1px solid #333333;
+    border: 1px solid #ffffff;
     bottom: -20px;
     content: "";
     left: 0;

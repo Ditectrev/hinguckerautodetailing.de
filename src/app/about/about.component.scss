@@ -1,15 +1,31 @@
+// Colors
+$bg-color: #373737;
+$dot-color: #121212;
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 22px;
+
 .about-area {
-  background-color: #f9f9f9;
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
 }
 
 .single-well {
   p {
-    color: #444444;
+    //color: #444444;
+    color: #cdcdcd;
     text-align: justify;
   }
 
   ul li {
-    color: #444444;
+    //color: #444444;
+    color: #cdcdcd;
     display: block;
     padding: 5px 0;
 
@@ -24,3 +40,12 @@
     margin-top: 40px;
   }
 }
+
+h2, h4 {
+  color: #cdcdcd;
+}
+
+
+//.about-area {
+//  background-color: #f9f9f9;
+//}
