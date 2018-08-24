@@ -1,5 +1,4 @@
 .services-icon {
-  color: #444444;
   display: inline-block;
   font-size: 36px;
   line-height: 46px;
@@ -24,28 +23,12 @@
   max-height: 200px;
 
   h4 {
-    color: #444444;
     font-size: 24px;
     font-weight: 500;
     padding: 0 20px;
   }
 
   p {
-    color: #333333;
     font-size: 14px;
   }
-}
-
-#services {
-  background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color:#282828;
-  background-size:16px 16px;
-}
-
-h2, h4 {
-  color: #ffffff!important;
 }

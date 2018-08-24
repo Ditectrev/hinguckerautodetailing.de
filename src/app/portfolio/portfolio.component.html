@@ -1,56 +1,58 @@
 <app-header></app-header>
-<div id="portfolio" class="portfolio-area area-padding fix">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="section-headline text-center">
-          <h2>Unser Portfolio</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <!-- TODO: Add fade animation when changing category. -->
-      <div class="project-filter fix">
+<section>
+  <div id="portfolio" class="portfolio-area area-padding fix">
+    <div class="container">
+      <div class="row">
         <div class="col-xs-12">
-          <div class="project-menu-container">
-            <ul class="project-menu">
-              <!-- TODO: Add list and ngFor. -->
-              <li>
-                <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'" role="link">Alle</a>
-              </li>
-              <li>
-                <a [class.active]="filterBy === 'luxury'" (click)="filterBy = 'luxury'" role="link">Luxusautos</a>
-              </li>
-              <li>
-                <a [class.active]="filterBy === 'old'" (click)="filterBy = 'old'" role="link">Klassische</a>
-              </li>
-              <li>
-                <a [class.active]="filterBy === 'sport'" (click)="filterBy = 'sport'" role="link">Sportwagen</a>
-              </li>
-              <li>
-                <a [class.active]="filterBy === 'suv'" (click)="filterBy = 'suv'" role="link">Suvs</a>
-              </li>
-              <li>
-                <a [class.active]="filterBy === 'van'" (click)="filterBy = 'van'" role="link">Lieferwagen</a>
-              </li>
-              <li>
-                <a [class.active]="filterBy === 'other'" (click)="filterBy = 'other'" role="link">Andere</a>
-              </li>
-            </ul>
+          <div class="section-headline text-center">
+            <h2>Unser Portfolio</h2>
           </div>
         </div>
       </div>
-      <div class="project-content">
-        <div class="col-sm-4 col-xs-12 kat1" *ngFor="let image of (visibleImages | imageFilter:filterBy)">
-          <div class="single-project">
-            <div class="project-img">
-              <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
-              <div class="add-actions text-center">
-                <div class="project-dec">
-                  <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" class="venobox" data-gall="myGallery" role="link">
-                    <h4>{{image.title}}</h4>
-                    <span>{{image.description}}</span>
-                  </a>
+      <div class="row">
+        <!-- TODO: Add fade animation when changing category. -->
+        <div class="project-filter fix">
+          <div class="col-xs-12">
+            <div class="project-menu-container">
+              <ul class="project-menu">
+                <!-- TODO: Add list and ngFor. -->
+                <li>
+                  <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'" role="link">Alle</a>
+                </li>
+                <li>
+                  <a [class.active]="filterBy === 'luxury'" (click)="filterBy = 'luxury'" role="link">Luxusautos</a>
+                </li>
+                <li>
+                  <a [class.active]="filterBy === 'old'" (click)="filterBy = 'old'" role="link">Klassische</a>
+                </li>
+                <li>
+                  <a [class.active]="filterBy === 'sport'" (click)="filterBy = 'sport'" role="link">Sportwagen</a>
+                </li>
+                <li>
+                  <a [class.active]="filterBy === 'suv'" (click)="filterBy = 'suv'" role="link">Suvs</a>
+                </li>
+                <li>
+                  <a [class.active]="filterBy === 'van'" (click)="filterBy = 'van'" role="link">Lieferwagen</a>
+                </li>
+                <li>
+                  <a [class.active]="filterBy === 'other'" (click)="filterBy = 'other'" role="link">Andere</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="col-sm-4 col-xs-12 kat1" *ngFor="let image of (visibleImages | imageFilter:filterBy)">
+            <div class="single-project">
+              <div class="project-img">
+                <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" class="venobox" data-gall="myGallery" role="link">
+                      <h4>{{image.title}}</h4>
+                      <span>{{image.description}}</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -59,7 +61,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 <app-reviews></app-reviews>
 <app-cta></app-cta>
 <app-footer></app-footer>

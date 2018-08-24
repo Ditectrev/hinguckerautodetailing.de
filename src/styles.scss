@@ -1,9 +1,17 @@
 @import "~npm-font-open-sans/open-sans.css";
 @import "~raleway-webfont/raleway.css";
 
+// Colors
+$bg-color: #373737;
+$dot-color: #121212;
+
+// Dimensions
+$dot-size: 2px;
+$dot-space: 22px;
+
 body {
   background: #ffffff none repeat scroll 0 0;
-  color: #444444;
+  color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -35,12 +43,12 @@ a {
 }
 
 p {
-  color: #444444;
+  color: #ffffff;
   margin: 0 0 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: #ffffff;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   margin: 0 0 15px;
@@ -89,6 +97,16 @@ ul {
 
 button, input, select, textarea {
   box-shadow: none !important;
+}
+
+section {
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
 }
 
 .area-padding {

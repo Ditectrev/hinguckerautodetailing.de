@@ -1,11 +1,4 @@
 .contact-area {
-  background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color:#282828;
-  background-size:16px 16px;
   height: auto;
   width: 100%;
 }
@@ -15,7 +8,6 @@
     background: rgba(0,0,0,0) none repeat scroll 0 0;
     border: 1px solid #cccccc;
     border-radius: 30px;
-    //color: #444444;
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -36,8 +28,7 @@
     //border: 1px solid #cccccc;
     border: 1px solid #ffffff;;
     border-radius: 0;
-    //color: #444444;
-    color: #ffffff!important;
+    color: #ffffff;
     height: 40px;
     margin-bottom: 16px;
     padding-left: 20px;
@@ -46,11 +37,9 @@
 
   textarea {
     background: rgba(0,0,0,0) none repeat scroll 0 0;
-    //border: 1px solid #cccccc;
     border: 1px solid #ffffff;
     border-radius: 0;
-    //color: #444444;
-    color: #ffffff!important;
+    color: #ffffff;
     height: 140px;
     padding: 20px;
     width: 100%;
@@ -104,8 +93,4 @@ agm-map {
   .contact-form {
     margin-top: 30px;
   }
-}
-
-h2 {
-  color: #ffffff!important;
 }
