@@ -13,10 +13,10 @@ export class ConvertibleRoofsCleaningComponent implements OnInit {
   ngOnInit(): void {
     this.galleryOptions = [
       {
-        height: '800px',
-        width: '800px',
+        height: '200px',
+        image: false,
         imageSwipe: true,
-        lazyLoading: true
+        width: '800px'
       },
       {
         breakpoint: 991,
