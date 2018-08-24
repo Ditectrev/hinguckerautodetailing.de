@@ -23,6 +23,9 @@
                   <a [class.active]="filterBy === 'luxury'" (click)="filterBy = 'luxury'" role="link">Luxusautos</a>
                 </li>
                 <li>
+                  <a [class.active]="filterBy === 'normal'" (click)="filterBy = 'normal'" role="link">Normal</a>
+                </li>
+                <li>
                   <a [class.active]="filterBy === 'old'" (click)="filterBy = 'old'" role="link">Klassische</a>
                 </li>
                 <li>
@@ -45,10 +48,11 @@
           <div class="col-sm-4 col-xs-12 kat1" *ngFor="let image of (visibleImages | imageFilter:filterBy)">
             <div class="single-project">
               <div class="project-img">
-                <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
+                <!-- TODO: Add instead href and fix routerLink. -->
+                <a href="{{image.gallery_url}}" title="{{image.title}}" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
-                    <a href="{{image.gallery_url}}" title="{{image.title}}" target="_blank" class="venobox" data-gall="myGallery" role="link">
+                    <a href="{{image.gallery_url}}" title="{{image.title}}" class="venobox" data-gall="myGallery" role="link">
                       <h4>{{image.title}}</h4>
                       <span>{{image.description}}</span>
                     </a>

@@ -250,5 +250,45 @@ const IMAGES = [
     'description': 'Klicken Sie hier, um die Facebook-Galerie zu sehen',
     'photo_url': 'assets/images/gallery/other3.jpg',
     'gallery_url': 'https://www.facebook.com/pg/HinguckerAutoDetailing/photos/?tab=album&album_id=1651895291531570'
+  },
+  {
+    'id': 31,
+    'category': 'normal',
+    'title': 'BMW E39',
+    'description': 'Klicken Sie hier, um die Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/normal1.jpg',
+    'gallery_url': 'bmw-e39'
+  },
+  {
+    'id': 32,
+    'category': 'normal',
+    'title': 'PEUGEOT 307',
+    'description': 'Klicken Sie hier, um die Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/normal2.jpg',
+    'gallery_url': 'bmw-e39'
+  },
+  {
+    'id': 33,
+    'category': 'normal',
+    'title': 'GOLF 4 GTI',
+    'description': 'Klicken Sie hier, um die Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/normal3.jpg',
+    'gallery_url': 'bmw-e39'
+  },
+  {
+    'id': 34,
+    'category': 'normal',
+    'title': 'GOLF CABRIO',
+    'description': 'Klicken Sie hier, um die Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/normal4.jpg',
+    'gallery_url': 'bmw-e39'
+  },
+  {
+    'id': 35,
+    'category': 'normal',
+    'title': 'OPEL ZAFIRA',
+    'description': 'Klicken Sie hier, um die Galerie zu sehen',
+    'photo_url': 'assets/images/gallery/normal5.jpg',
+    'gallery_url': 'bmw-e39'
   }
 ];

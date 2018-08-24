@@ -19,6 +19,7 @@ import {PaintRepairComponent} from './services/paint-repair/paint-repair.compone
 import {PaintProtectionQuartzComponent} from './services/paint-protection-quartz/paint-protection-quartz.component';
 import {PaintProtectionCeramicsComponent} from './services/paint-protection-ceramics/paint-protection-ceramics.component';
 import {ErrorPageComponent} from './error-page/error-page.component';
+import {BmwE39Component} from './portfolio/bmw-e39/bmw-e39.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -41,6 +42,7 @@ export const appRoutes: Routes = [
   { path: 'lackschutz-quarzbeschichtung', component: PaintProtectionQuartzComponent, data: { animation: 'page18' } },
   { path: 'lackschutz-keramik', component: PaintProtectionCeramicsComponent, data: { animation: 'page19' } },
   { path: 'nicht-gefunden', component: ErrorPageComponent, data: { animation: 'page20' } },
+  { path: 'bmw-e39', component: BmwE39Component, data: { animation: 'page21' } },
   // It's important that wildcard route has to be the last element in array of routes, because routes parses from top to bottom.
   { path: '**', // Wildcard path, which means to catch all other routes, not specified above.
     redirectTo: '/nicht-gefunden' // Alternative to component in routes, which redirects to specific path.

@@ -42,6 +42,7 @@ import {MailService} from './shared/mail.service';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { BmwE39Component } from './portfolio/bmw-e39/bmw-e39.component';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     PaintRepairComponent,
     PaintProtectionQuartzComponent,
     PaintProtectionCeramicsComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    BmwE39Component
   ],
   imports: [
     BrowserModule,
