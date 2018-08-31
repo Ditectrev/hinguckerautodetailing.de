@@ -113,10 +113,6 @@ section {
   padding: 70px 0 80px;
 }
 
-.area-padding-2 {
-  padding: 70px 0 50px;
-}
-
 .fix {
   overflow: hidden;
 }
@@ -170,20 +166,8 @@ section {
   display: inline-block;
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 70px;
+  margin: 20px 0 40px;
   position: relative;
-
-  &::after {
-    //border: 1px solid #333333;
-    border: 1px solid #ffffff;
-    bottom: -20px;
-    content: "";
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    width: 40%;
-  }
 }
 
 .sec-head {

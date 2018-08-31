@@ -16,7 +16,7 @@ header {
     padding: 10px 0;
 
     .icon-bar {
-      background-color: #ffffff;
+      background-color: #000000;
       height: 2px;
       width: 30px;
     }
@@ -27,6 +27,7 @@ header {
   >img {
     display: block;
     position: absolute;
+    max-width: 70%;
     top: 0;
   }
 }
@@ -124,7 +125,7 @@ header {
     padding: 25px 0;
 
     .icon-bar {
-      background-color: #ffffff;
+      background-color: #000000;
       height: 2px;
       width: 30px;
     }
@@ -153,7 +154,6 @@ header {
 
 @media (max-width: 767px) {
   header {
-    background: #000000;
     height: 60px !important;
   }
 
@@ -176,7 +176,11 @@ header {
   }
 
   .nav.navbar-nav.navbar-right {
-    background-color: #252525;
+    background-color: #fff;
+    background-image:
+      linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+      linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
     margin-top: 0;
     padding: 0;
   }
