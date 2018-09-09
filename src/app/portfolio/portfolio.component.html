@@ -49,10 +49,10 @@
             <div class="single-project">
               <div class="project-img">
                 <!-- TODO: Add instead href and fix routerLink. -->
-                <a href="{{image.gallery_url}}" title="{{image.title}}" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
+                <a routerLink="{{image.gallery_url}}" title="{{image.title}}" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">
-                    <a href="{{image.gallery_url}}" title="{{image.title}}" class="venobox" data-gall="myGallery" role="link">
+                    <a routerLink="{{image.gallery_url}}" title="{{image.title}}" class="venobox" data-gall="myGallery" role="link">
                       <h4>{{image.title}}</h4>
                       <span>{{image.description}}</span>
                     </a>

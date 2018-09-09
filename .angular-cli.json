@@ -26,7 +26,8 @@
       ],
       "scripts": [
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../node_modules/wowjs/dist/wow.min.js"
+        "../node_modules/wowjs/dist/wow.min.js",
+        "../node_modules/hammerjs/hammer.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
