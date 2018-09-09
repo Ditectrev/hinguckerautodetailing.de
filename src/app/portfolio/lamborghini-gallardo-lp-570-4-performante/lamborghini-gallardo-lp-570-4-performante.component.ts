@@ -333,7 +333,7 @@ export class LamborghiniGallardoLp5704PerformanteComponent implements OnInit {
       },
       {
         small: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_59.jpg',
-        medium: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_49.jpg',
+        medium: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_59.jpg',
         big: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_59.jpg'
       },
       {
@@ -383,7 +383,7 @@ export class LamborghiniGallardoLp5704PerformanteComponent implements OnInit {
       },
       {
         small: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_69.jpg',
-        medium: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_49.jpg',
+        medium: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_69.jpg',
         big: 'assets/images/gallery/lamborghini_gallardo_lp_570-4_performante/lamborghini_gallardo_lp_570-4_performante_69.jpg'
       }
     ];

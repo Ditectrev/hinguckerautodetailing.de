@@ -56,6 +56,7 @@ import {TeslaXComponent} from './portfolio/tesla-x/tesla-x.component';
 import {VolvoXc90Component} from './portfolio/volvo-xc90/volvo-xc90.component';
 import {VwKafer1965Component} from './portfolio/vw-kafer-1965/vw-kafer-1965.component';
 import {VwMultivanBlackWhiteComponent} from './portfolio/vw-multivan-black-white/vw-multivan-black-white.component';
+import {LkwGrundlicheReinigungDesInnenraumsComponent} from './portfolio/lkw-grundliche-reinigung-des-innenraums/lkw-grundliche-reinigung-des-innenraums.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -98,8 +99,8 @@ export const appRoutes: Routes = [
   { path: 'portfolio/jaguar-xj6', component: JaguarXj6Component, data: { animation: 'page37' } },
   { path: 'portfolio/kawasaki-zx10r-ninja', component: KawasakiZx10rNinjaComponent, data: { animation: 'page24' } },
   { path: 'portfolio/kia-ceed-gt', component: KiaCeedGtComponent, data: { animation: 'page38' } },
-  { path: 'portfolio/lamborghini-gallardo-lp-570-4-performante', component: AudiTtRsComponent, data: { animation: 'page39' } },
-  { path: 'portfolio/lkw-grundliche-reinigung-des-innenraums', component: LamborghiniGallardoLp5704PerformanteComponent, data: { animation: 'page40' } },
+  { path: 'portfolio/lamborghini-gallardo-lp-570-4-performante', component: LamborghiniGallardoLp5704PerformanteComponent, data: { animation: 'page39' } },
+  { path: 'portfolio/lkw-grundliche-reinigung-des-innenraums', component: LkwGrundlicheReinigungDesInnenraumsComponent, data: { animation: 'page40' } },
   { path: 'portfolio/maserati-granturismo-2007', component: MaseratiGranturismo2007Component, data: { animation: 'page41' } },
   { path: 'portfolio/mercedes-c-63s-amg', component: MercedesC63sAmgComponent, data: { animation: 'page42' } },
   { path: 'portfolio/mercedes-g63-amg', component: MercedesG63AmgComponent, data: { animation: 'page43' } },
