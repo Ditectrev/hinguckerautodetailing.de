@@ -34,34 +34,9 @@
 }
 
 .team-social-icon {
-  left: 50%;
-  margin-left: -18px;
   opacity: 0;
   position: absolute;
-  top: 30%;
   transition: 1.3s;
-
-  ul li {
-    display: inline-block;
-
-    a {
-      border: 1px solid #ffffff;
-      border-radius: 50%;
-      color: #ffffff;
-      display: block;
-      font-size: 14px;
-      height: 34px;
-      line-height: 35px;
-      margin: 0 3px;
-      width: 34px;
-
-      &:hover {
-        background: #3ec1d5;
-        border: 1px solid #3ec1d5;
-        color: #ffffff;
-      }
-    }
-  }
 }
 
 .team-content {

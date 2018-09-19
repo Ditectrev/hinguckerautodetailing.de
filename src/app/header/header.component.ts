@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   mainRoutes = [
-    { 'url': '/uber-uns', 'name': 'Über Uns' },
+    { 'url': '/', 'name': 'Hauptseite' },
     { 'url': '/dienstleistungen', 'name': 'Dienstleistungen' },
     { 'url': '/portfolio', 'name': 'Portfolio' },
     { 'url': '/kontakt', 'name': 'Kontakt' }

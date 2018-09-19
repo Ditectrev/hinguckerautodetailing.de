@@ -60,7 +60,6 @@ import {LkwGrundlicheReinigungDesInnenraumsComponent} from './portfolio/lkw-grun
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
-  { path: 'uber-uns', component: AboutComponent, data: { animation: 'page2' } },
   { path: 'dienstleistungen', component: ServicesComponent, data: { animation: 'page3' } },
   { path: 'portfolio', component: PortfolioComponent, data: { animation: 'page4' } },
   { path: 'kontakt', component: ContactComponent, data: { animation: 'page5' } },
