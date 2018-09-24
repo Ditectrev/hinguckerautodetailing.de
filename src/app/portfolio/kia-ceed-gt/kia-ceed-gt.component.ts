@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgxGalleryImage, NgxGalleryOptions} from 'ngx-gallery';
+import {NgxSpinnerService} from 'ngx-spinner';
 
 @Component({
   selector: 'app-kia-ceed-gt',
@@ -10,7 +11,13 @@ export class KiaCeedGtComponent implements OnInit {
   // Slider options.
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
+  constructor(private spinner: NgxSpinnerService) { }
   ngOnInit(): void {
+    // Show spinner for 2 seconds.
+    this.spinner.show();
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 2000);
     this.galleryOptions = [
       {
         height: '600px',

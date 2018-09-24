@@ -80,6 +80,7 @@ import { TeslaXComponent } from './portfolio/tesla-x/tesla-x.component';
 import { VolvoXc90Component } from './portfolio/volvo-xc90/volvo-xc90.component';
 import { VwKafer1965Component } from './portfolio/vw-kafer-1965/vw-kafer-1965.component';
 import { VwMultivanBlackWhiteComponent } from './portfolio/vw-multivan-black-white/vw-multivan-black-white.component';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 
 @NgModule({
@@ -158,6 +159,7 @@ import { VwMultivanBlackWhiteComponent } from './portfolio/vw-multivan-black-whi
     HttpModule,
     MomentModule,
     NgxGalleryModule,
+    NgxSpinnerModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({

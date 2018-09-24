@@ -140,18 +140,6 @@ section {
   }
 }
 
-// TODO: Add to website.
-#preloader {
-  background: #ffffff url('assets/images/preloader.gif');
-  height: 100%;
-  left: 0;
-  overflow: visible;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99999;
-}
-
 ::-moz-selection {
   background: #3ec1d5;
   text-shadow: none;
