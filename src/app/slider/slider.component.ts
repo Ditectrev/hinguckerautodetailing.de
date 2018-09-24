@@ -26,6 +26,12 @@ export class SliderComponent implements AfterViewInit, OnInit {
         lazyLoading: true,
         preview: false,
         thumbnails: false
+      },
+      // Hide slide show on mobile devices.
+      {
+        breakpoint: 991,
+        height: '0px',
+        image: false
       }
     ];
 
