@@ -109,29 +109,6 @@ section {
   overflow: hidden;
 }
 
-// TODO: Add to HTML.
-.back-to-top {
-  background: #3ec1d5;
-  border-radius: 2px;
-  bottom: 15px;
-  color: #ffffff;
-  display: none;
-  font-size: 16px;
-  padding: 6px 12px 9px;
-  position: fixed;
-  right: 15px;
-  transition: background .5s;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus, &:hover {
-    background: #3ec1d5;
-    color: #ffffff;
-  }
-}
-
 ::-moz-selection {
   background: #3ec1d5;
   text-shadow: none;
@@ -161,10 +138,6 @@ section {
 }
 
 @media (max-width: 767px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-
   .section-headline h2 {
     font-size: 30px;
   }
