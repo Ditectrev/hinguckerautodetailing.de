@@ -1,12 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {NgxSpinnerService} from 'ngx-spinner';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent {
   servicesRoutes = [
     { 'url': '/instandsetzung-des-lackes', 'name': 'Instandsetzung des Lackes', 'image': 'assets/images/services/paint-repair1.jpg' },
     { 'url': '/lackschutz-wachs', 'name': 'Lackschutz - Wachs', 'image': 'assets/images/services/paint-protection-wax1.jpg' },
@@ -23,12 +22,4 @@ export class ServicesComponent implements OnInit {
     { 'url': '/instandsetzung-der-lampen', 'name': 'Instandsetzung der Lampen', 'image': 'assets/images/services/lamps1.jpg' },
     { 'url': '/door-to-door', 'name': 'Door to door', 'image': 'assets/images/services/door-to-door1.jpg' }
   ];
-  constructor(private spinner: NgxSpinnerService) { }
-  ngOnInit() {
-    // Show spinner for 2 seconds.
-    this.spinner.show();
-    setTimeout(() => {
-      this.spinner.hide();
-    }, 2000);
-  }
 }
