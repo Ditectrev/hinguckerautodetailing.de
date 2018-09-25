@@ -10,12 +10,10 @@
         </div>
       </div>
       <div class="row">
-        <!-- TODO: Add fade animation when changing category. -->
         <div class="project-filter fix">
           <div class="col-xs-12">
             <div class="project-menu-container">
               <ul class="project-menu">
-                <!-- TODO: Add list and ngFor. -->
                 <li>
                   <a [class.active]="filterBy === 'all'" (click)="filterBy = 'all'" role="link">Alle</a>
                 </li>
@@ -48,7 +46,6 @@
           <div class="col-sm-4 col-xs-12 kat1" *ngFor="let image of (visibleImages | imageFilter:filterBy)">
             <div class="single-project">
               <div class="project-img">
-                <!-- TODO: Add instead href and fix routerLink. -->
                 <a routerLink="{{image.gallery_url}}" title="{{image.title}}" role="link"><img src="{{image.photo_url}}" alt="{{image.title}}"></a>
                 <div class="add-actions text-center">
                   <div class="project-dec">

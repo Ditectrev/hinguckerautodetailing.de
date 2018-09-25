@@ -1,14 +1,6 @@
 @import "~npm-font-open-sans/open-sans.css";
 @import "~raleway-webfont/raleway.css";
 
-// Colors
-$bg-color: #373737;
-$dot-color: #121212;
-
-// Dimensions
-$dot-size: 2px;
-$dot-space: 22px;
-
 body {
   background: #ffffff none repeat scroll 0 0;
   color: #ffffff;
@@ -166,13 +158,6 @@ section {
   padding: 0 0 10px;
   text-transform: uppercase;
   transition: all .4s ease 0s;
-}
-
-.text-overly {
-  background: rgba(0,0,0,.6);
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
 @media (max-width: 767px) {
