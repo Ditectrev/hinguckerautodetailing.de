@@ -51,7 +51,13 @@
       line-height: 38px;
       margin-right: 5px;
       text-align: center;
+      transition: .6s;
       width: 40px;
+      &:hover {
+        background: #3ec1d5;
+        border-color: #3ec1d5;
+        color: #ffffff;
+      }
     }
   }
 }
