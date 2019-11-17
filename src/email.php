@@ -17,7 +17,7 @@ if (empty($errors)) {
   $subject = $request->subject;
   $message = $request->message;
 
-  $to_email = 'kontakt@hinguckerautodetailing.de';
+  $to_email = 'kontakt@hingucker-auto-detailing.de';
 
   $contact =
     "<p><strong>Name:</strong> $from_name</p>" .

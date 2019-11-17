@@ -6,16 +6,17 @@ h2 {
   padding-bottom: 20px;
 }
 
+p {
+  padding: 0 20px;
+  text-align: justify;
+}
+
 .single-team-member {
   border: 1px solid #dddddd;
+  margin: 0 10px;
 
   &:hover {
     .team-img a:after {
-      opacity: 1;
-    }
-
-    .team-social-icon {
-      top: 45%;
       opacity: 1;
     }
   }
@@ -24,18 +25,18 @@ h2 {
 .team-img {
   position: relative;
 
-  &>a {
+  & > a {
     display: block;
 
     &::after {
-      background: rgba(0,0,0,.7);
+      background: rgba(0, 0, 0, 0.7);
       bottom: 0;
       content: "";
       height: 100%;
       left: 0;
       opacity: 0;
       position: absolute;
-      transition: all .5s ease 0s;
+      transition: all 0.5s ease 0s;
       width: 100%;
     }
   }
@@ -59,18 +60,18 @@ h2 {
 .team-img {
   position: relative;
 
-  &>a {
+  & > a {
     display: block;
 
     &::after {
-      background: rgba(0,0,0,.7);
+      background: rgba(0, 0, 0, 0.7);
       bottom: 0;
       content: "";
       height: 100%;
       left: 0;
       opacity: 0;
       position: absolute;
-      transition: all .5s ease 0s;
+      transition: all 0.5s ease 0s;
       width: 100%;
     }
   }
@@ -85,14 +86,15 @@ h2 {
 .team-content {
   padding: 10px 0;
 
-  &>h4, &>p {
+  & > h4,
+  & > p {
     color: #ffffff;
     margin-bottom: 5px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .team-content.text-center>h4 {
+  .team-content.text-center > h4 {
     font-size: 20px;
   }
 }
@@ -102,4 +104,3 @@ h2 {
     margin-bottom: 30px;
   }
 }
-

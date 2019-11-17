@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
   phone = '+49 1520 4271999';
   open_hours1 = 'Montag-Freitag (09:00-17:00)';
   open_hours2 = 'Samstag (09:00-15:00)';
-  mail = 'kontakt@hinguckerautodetailing.de';
+  mail = 'kontakt@hingucker-auto-detailing.de';
   website = 'www.hinguckerautodetailing.de';
   street = 'Krackser Str. 200 (Sennestadt)';
   city = '33689 Bielefeld, Deutschland';
