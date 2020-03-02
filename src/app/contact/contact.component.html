@@ -17,7 +17,7 @@
               <div class="single-icon">
                 <i class="fa fa-mobile"></i>
                 <p>
-                  <span>{{ phone }}</span><br>
+                  <span><a href="tel:{{ phone }}"><strong>{{ phone }}</strong></a></span><br>
                   <span>{{ open_hours1 }}</span><br>
                   <span>{{ open_hours2 }}</span>
                 </p>
@@ -29,8 +29,8 @@
               <div class="single-icon">
                 <i class="fa fa-envelope-o"></i>
                 <p>
-                  <span>{{ mail }}</span><br>
-                  <span>{{ website }}</span>
+                  <span> <a href="mailto:{{ mail }}"><strong>{{ mail }}</strong></a></span><br>
+                  <span> <a href="https://hingucker-auto-detailing.de">{{ website }}</a></span>
                 </p>
               </div>
             </div>
@@ -55,52 +55,31 @@
           </div>
           <div class="col-sm-6 col-xs-12">
             <div class="form contact-form">
-              <form [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm.value.userData)" role="form" class="contactForm">
+              <form [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm.value.userData)" role="form"
+                class="contactForm">
                 <div formGroupName="userData">
                   <div class="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      formControlName="name"
+                    <input type="text" name="name" class="form-control" id="name" formControlName="name"
                       placeholder="{{ placeholderName }}">
-                    <span
-                      *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched"
+                    <span *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched"
                       class="help-block">{{ wrongName }}</span>
                   </div>
                   <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      formControlName="email"
+                    <input type="email" class="form-control" name="email" id="email" formControlName="email"
                       placeholder="{{ placeholderEmail }}">
-                    <span
-                      *ngIf="!signupForm.get('userData.email').valid && signupForm.get('userData.email').touched"
-                      class="help-block"
-                    >{{ wrongEmail }}</span>
+                    <span *ngIf="!signupForm.get('userData.email').valid && signupForm.get('userData.email').touched"
+                      class="help-block">{{ wrongEmail }}</span>
                   </div>
                   <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      id="subject"
-                      formControlName="subject"
+                    <input type="text" class="form-control" name="subject" id="subject" formControlName="subject"
                       placeholder="{{ placeholderSubject }}">
                     <span
                       *ngIf="!signupForm.get('userData.subject').valid && signupForm.get('userData.subject').touched"
                       class="help-block">{{ wrongSubject }}</span>
                   </div>
                   <div class="form-group">
-                <textarea
-                  name="message"
-                  class="form-control"
-                  formControlName="message"
-                  rows="5"
-                  placeholder="{{ placeholderMessage }}"></textarea>
+                    <textarea name="message" class="form-control" formControlName="message" rows="5"
+                      placeholder="{{ placeholderMessage }}"></textarea>
                     <span
                       *ngIf="!signupForm.get('userData.message').valid && signupForm.get('userData.message').touched"
                       class="help-block">{{ wrongMessage }}</span>
@@ -108,7 +87,8 @@
                   <div class="text-center">
                     <button type="submit" [disabled]="!signupForm.valid">{{ sendMessage }}</button>
                     <span *ngIf="!signupForm.valid && signupForm.touched" class="help-block">{{ wrongForm }}</span>
-                    <span *ngIf="signupForm.valid && this.submitted" class="help-block success-span">{{ sentMessage }}</span>
+                    <span *ngIf="signupForm.valid && this.submitted"
+                      class="help-block success-span">{{ sentMessage }}</span>
                   </div>
                 </div>
               </form>

@@ -1,0 +1,27 @@
+.single-well {
+  p {
+    text-align: justify;
+  }
+
+  ul li {
+    color: #ffffff;
+    display: block;
+    padding: 5px 0;
+
+    i {
+      color: #3ec1d5;
+      font-size: 12px;
+      padding-right: 10px;
+    }
+  }
+
+  img {
+    margin-top: 30px;
+  }
+}
+
+ngx-gallery {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
