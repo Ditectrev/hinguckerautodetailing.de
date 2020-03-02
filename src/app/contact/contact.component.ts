@@ -9,6 +9,7 @@ import { IMessage, MailService } from "../shared/mail.service";
 })
 export class ContactComponent implements OnInit {
   // Basic data.
+
   title = "Kontaktiere uns";
   phone = "+49 1520 4271999";
   open_hours1 = "Montag-Freitag (09:00-17:00)";
@@ -17,6 +18,7 @@ export class ContactComponent implements OnInit {
   website = "www.hingucker-auto-detailing.de";
   street = "Krackser Str. 200 (Sennestadt)";
   city = "33689 Bielefeld, Deutschland";
+
   // Placeholder form data.
   placeholderName = "Dein Name";
   placeholderEmail = "Deine E-Mail";
