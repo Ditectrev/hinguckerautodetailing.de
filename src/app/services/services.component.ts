@@ -8,8 +8,8 @@ import { Component } from "@angular/core";
 export class ServicesComponent {
   servicesRoutes = [
     {
-      url: "/instandsetzung-des-lackes",
-      name: "Instandsetzung des Lackes",
+      url: "/lackkorrektur-polieren",
+      name: "Lackkorrektur (Polieren)",
       image: "assets/images/services/paint-repair1.jpg"
     },
     {

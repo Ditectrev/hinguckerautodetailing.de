@@ -1,4 +1,5 @@
 <!-- Here display routes content. -->
 <main [@routeState]="getRouterOutletState(routerOutlet)">
-  <router-outlet #routerOutlet="outlet" (activate)="onActivate($event)"></router-outlet>
+  <!-- <router-outlet #routerOutlet="outlet" (activate)="onActivate($event)"></router-outlet> -->
+  <router-outlet #routerOutlet="outlet"></router-outlet>
 </main>

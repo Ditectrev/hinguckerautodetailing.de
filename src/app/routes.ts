@@ -132,7 +132,7 @@ export const appRoutes: Routes = [
     data: { animation: "page15" }
   },
   {
-    path: "instandsetzung-des-lackes",
+    path: "lackkorrektur-polieren",
     component: PaintRepairComponent,
     data: { animation: "page16" }
   },

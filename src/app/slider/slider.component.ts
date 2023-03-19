@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min.js';
 import { AfterViewInit } from '@angular/core';
-import {NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryAction} from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryAction } from 'ngx-gallery';
 
 @Component({
   selector: 'app-slider',
@@ -50,6 +50,16 @@ export class SliderComponent implements AfterViewInit, OnInit {
         small: 'assets/images/slider3.jpg',
         medium: 'assets/images/slider3.jpg',
         big: 'assets/images/slider3.jpg'
+      },
+      {
+        small: 'assets/images/slider4.jpg',
+        medium: 'assets/images/slider4.jpg',
+        big: 'assets/images/slider4.jpg'
+      },
+      {
+        small: 'assets/images/slider5.jpg',
+        medium: 'assets/images/slider5.jpg',
+        big: 'assets/images/slider5.jpg'
       }
     ];
   }

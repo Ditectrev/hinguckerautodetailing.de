@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   title = "Kontaktiere uns";
   phone = "+49 1520 4271999";
-  open_hours1 = "Montag-Freitag (09:00-17:00)";
+  open_hours1 = "Montag-Freitag (10:00-18:00)";
   open_hours2 = "Samstag (09:00-15:00)";
   mail = "kontakt@hingucker-auto-detailing.de";
   website = "www.hingucker-auto-detailing.de";
@@ -38,7 +38,7 @@ export class ContactComponent implements OnInit {
   // Form primitives.
   signupForm: FormGroup;
   submitted: boolean;
-  constructor(private mailService: MailService) {}
+  constructor(private mailService: MailService) { }
   ngOnInit() {
     // Set up form inputs.
     this.signupForm = new FormGroup({
@@ -57,7 +57,7 @@ export class ContactComponent implements OnInit {
       res => {
         console.log("MailService success", res);
         this.signupForm.reset(); // Reset form on submit.
-        setTimeout(function() {
+        setTimeout(function () {
           this.submitted = false;
         }, 5000);
       },
