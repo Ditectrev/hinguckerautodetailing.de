@@ -16,8 +16,8 @@ export class ContactComponent implements OnInit {
   open_hours2 = "Samstag (09:00-15:00)";
   mail = "kontakt@hingucker-auto-detailing.de";
   website = "www.hingucker-auto-detailing.de";
-  street = "Krackser Str. 200 (Sennestadt)";
-  city = "33689 Bielefeld, Deutschland";
+  street = "Mindener Straße 57";
+  city = "32547 Bad Oeynhausen, Deutschland";
 
   // Placeholder form data.
   placeholderName = "Dein Name";
@@ -33,8 +33,8 @@ export class ContactComponent implements OnInit {
   wrongForm = "Bitte geben Sie gültige Daten ein";
   sentMessage = "Die Nachricht wurde gesendet";
   // Google Maps data.
-  lat = 51.93965;
-  lng = 8.5659913;
+  lat = 52.2108682;
+  lng = 8.812339;
   // Form primitives.
   signupForm: FormGroup;
   submitted: boolean;
